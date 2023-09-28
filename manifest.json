@@ -1,7 +1,5 @@
 {
-	"name": "Canvas Dashboard",
-	"short_name": "Canvas",
-	"start_url": "https://gmo298.github.io/",
-	"background_color": "#fffffff",
-	"theme_colo": "#fffffff",
-	}
+  "manifest_version": 3,
+  "name": "Canvas",
+  "version": "1.0.0",
+}
