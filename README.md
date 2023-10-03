@@ -6,4 +6,4 @@
         5. Please report bugs on the discord on <b> #bug-reports. </b> <br>
         6. No impersonation on discord chat (Dont belive everthing people say you can fake it easy)
 Thanks for visiting!
-Deployed at <a> href=https://gmo298.github.io/ </a>
+Deployed at https://gmo298.github.io/
