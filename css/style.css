@@ -32,3 +32,24 @@ p {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+.menuITEMS {
+  position: relative;
+  left: 50%;
+  margin: 10px;
+  border: none;
+  color: rgba(255, 255, 255, 0.746);
+  width: 80%;
+  height: 70px;
+  transform: translate(-50%, -0%);
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 18px;
+  transition: 0.5s;
+  background-color: rgba(31, 31, 31, 0.581);
+}
+
+.menuITEMS:hover {
+  width: 84%;
+  border-radius: 50px;
+}
