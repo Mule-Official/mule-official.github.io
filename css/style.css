@@ -21,15 +21,15 @@ p {
 }
 
 .button {
-  background-color: #4CAF50;
+  background-color: #000088;
   border: none;
-  color: white;
-  padding: 15px 32px;
+  color: black;
+  padding: 30px 64px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 32px;
+  margin: 8px 4px;
   cursor: pointer;
 }
 
