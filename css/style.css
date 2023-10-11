@@ -21,7 +21,7 @@ p {
 }
 
 .button {
-  background-color: #000088;
+  background-color: #000099;
   border: none;
   color: white;
   padding: 30px 64px;
@@ -31,6 +31,7 @@ p {
   font-size: 32px;
   margin: 8px 4px;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .menuITEMS {
