@@ -21,7 +21,7 @@ p {
 }
 
 .button {
-  background-color: #0000aa;
+  background-image: url('ogc.png');
   border: none;
   color: white;
   padding: 30px 64px;
