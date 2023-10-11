@@ -1,5 +1,5 @@
 body {
-  background-color: cornflowerblue;
+  background-image: url("https://gmo298.github.io/icons/ogc.png");
 }
 
 h1 {
@@ -21,7 +21,7 @@ p {
 }
 
 .button {
-  background-color: #0000aa;
+  background-image: url('https://gmo298.github.io/icons/ogc.png');
   border: none;
   color: white;
   padding: 30px 64px;
