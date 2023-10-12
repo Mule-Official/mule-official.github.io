@@ -54,3 +54,9 @@ p {
   width: 84%;
   border-radius: 50px;
 }
+
+.corner {
+  position: absolute;
+        top: 0px;
+        right: 0px;
+}
