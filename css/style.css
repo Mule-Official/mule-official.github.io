@@ -21,17 +21,10 @@ p {
 }
 
 .button {
-  background-color: #0000aa;
+  background-image: url("/icons/150mule.png");
+  padding: 150px 150px;
   border: none;
-  color: white;
-  padding: 30px 64px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 32px;
-  margin: 8px 4px;
   cursor: pointer;
-  border-radius: 16px;
 }
 
 .menuITEMS {
