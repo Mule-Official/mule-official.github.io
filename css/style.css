@@ -59,8 +59,14 @@ p {
   border-radius: 50px;
 }
 
-.corner {
+.leftcorner {
   position: absolute;
         top: 0px;
         left: 0px;
+}
+
+.rightcorner {
+  position: absolute;
+        top: 0px;
+        right: 0px;
 }
