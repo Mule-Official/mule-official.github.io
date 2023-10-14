@@ -70,3 +70,10 @@ p {
         top: 0px;
         right: 0px;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
